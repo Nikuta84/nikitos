@@ -1,0 +1,13 @@
+movie_info = ['Сталкер', 'СССР', 1979, 'фантастика, драма, детектив', 163, 8.083]
+rating_category = ' '
+if 8 < movie_info[5] < 10:
+    rating_category = 'отличный рейтинг'
+elif 6 < movie_info[5] <= 8:
+    prating_category ='хороший рейтинг'
+elif 5 <= movie_info[5] <= 6:
+    rating_category ='средний рейтинг'
+elif 0 < movie_info[5] < 5:
+    rating_category ='низкий рейтинг'
+elif movie_info[5]== None or movie_info[5] >= 10 or movie_info[5] <= 0:
+    rating_category ='нет рейтинга'
+print(rating_category)
